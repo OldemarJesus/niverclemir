@@ -1,0 +1,84 @@
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0b1120;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #ffffff;
+    letter-spacing: .7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 345px;
+    background-color: #060a14;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all ease-in-out .5s;
+}
+
+.photo:hover{
+    scale: 1.2;
+}
+
+.photo img {
+    max-width: 300px;
+    border-radius: .55rem;
+    aspect-ratio: 3/4;
+}
+
+.photo-title {
+    color: white;
+    background-color: transparent;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.message {
+    margin: 5rem;
+    font-size: x-large;
+    color: #fff;
+    width: 40rem;
+    text-align: center;
+    line-height: 3rem;
+    letter-spacing: .4rem;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 780px) {
+    .message {
+        width: 20rem;
+        letter-spacing: .2rem;
+    }
+}
+
+.special {
+    color: #0e9edf;
+}
